@@ -1,0 +1,6 @@
+packaging
+gym
+tensorflow
+pandas_datareader
+timeit
+tensorforce
