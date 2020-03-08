@@ -1,6 +1,8 @@
 packaging
-gym
-tensorflow
+gym==0.16.0
 pandas_datareader
-timeit
+tensorflow==2.1.0
 tensorforce
+numpy
+seaborn
+matplotlib
