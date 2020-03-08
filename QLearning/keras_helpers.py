@@ -1,6 +1,7 @@
 import tensorflow as tf
 from packaging import version
 
+
 def importantText(text, color='red', underline=True):
     """ Function used to make print statements more legible """
     if color == 'green':
@@ -15,6 +16,7 @@ def importantText(text, color='red', underline=True):
 
     return f"\033[{effectsANSI}{colorANSI}m{text}\033[0m"
 
+
 def checkTensorflowSetup(verbose):
     # Check to make sure you're running TensorFlow 2.0+
     assert version.parse(tf.__version__).release[0] >= 2, \
@@ -27,7 +29,6 @@ def checkTensorflowSetup(verbose):
     if verbose == 2:
         # Use this to check if your GPU is actually utilized
         tf.debugging.set_log_device_placement(True)
-
 
     # To check if it can see and possibly utilize your gpu(s)
     gpu_lst = tf.config.experimental.list_physical_devices('GPU')
